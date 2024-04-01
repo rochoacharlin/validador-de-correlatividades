@@ -20,8 +20,4 @@ public class Alumno {
     public void agregarMateriasAprobadas(Materia ... materias){
         Collections.addAll(this.materiasAprobadas, materias);
     }
-
-    public String getNombre(){
-        return nombre;
-    }
 }

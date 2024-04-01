@@ -17,7 +17,7 @@ public class Inscripcion {
 
     public boolean aprobada() throws InscripcionSinMateriasException {
         if(this.materias.isEmpty()){
-            throw new InscripcionSinMateriasException("El alumno no se ha inscripto a ninguna materia.")    ;
+            throw new InscripcionSinMateriasException("El alumno no se ha inscripto a ninguna materia.");
         }
 
         return this.materias.stream().allMatch(m -> m.aproboCorrelativas(this.alumno));
